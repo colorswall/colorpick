@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -44,10 +44,9 @@ class SimpleModal extends Component {
 
     render() {
         const { classes } = this.props;
-        console.log(window.location);
         return (
-            <div>
-                <Button onClick={this.handleOpen}>
+            <Fragment>
+                <Button onClick={this.handleOpen} className="d-inline-block">
                     <ShareIcon />&nbsp;Share
                 </Button>
                 <Modal
@@ -73,7 +72,7 @@ class SimpleModal extends Component {
                         />
                     </div>
                 </Modal>
-            </div>
+            </Fragment>
         );
     }
 }

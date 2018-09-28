@@ -164,3 +164,13 @@ body {
     padding: 60px 0;
     text-align: center;
 }
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.github-button-wrapper {
+    display: inline-block;
+    margin: 10px 16px 0 0;
+    vertical-align: top;
+}

@@ -59,10 +59,15 @@ class Header extends PureComponent {
                             </Typography>
                             <a href="https://colorswall.com" className="logo-by">by ColorsWall</a>
                         </div>
-                        <Share />
+                        <div>
+                            <div className="github-button-wrapper">
+                                <a className="github-button" href="https://github.com/colorswall/colorpick" data-show-count="true" aria-label="Star colorswall/colorpick on GitHub">Star</a>
+                            </div>
+                            <Share />
+                        </div>
                     </Toolbar>
                 </AppBar>
-            </div>
+            </div >
         );
     }
 }
