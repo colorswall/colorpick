@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -29,7 +29,7 @@ const styles = theme => ({
     },
 });
 
-class SimpleModal extends Component {
+class SimpleModal extends PureComponent {
     state = {
         open: false,
     };

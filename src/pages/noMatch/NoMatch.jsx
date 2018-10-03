@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { NavLink } from 'react-router-dom';
 import { ROUTE_HOME } from '../contatns';
 
-class NoMacth extends Component {
+class NoMacth extends PureComponent {
     render() {
         return (
             <div className="contnet">

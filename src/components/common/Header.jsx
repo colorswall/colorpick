@@ -9,6 +9,7 @@ import { NavLink } from 'react-router-dom';
 import { ROUTE_HOME } from '../../pages/contatns';
 import { APP_VERSION } from '../../constants';
 import Share from './Share';
+import PalettePanel from '../palettes/PalettePanel';
 
 const styles = {
     root: {
@@ -63,6 +64,7 @@ class Header extends PureComponent {
                             <div className="github-button-wrapper">
                                 <a className="github-button" href="https://github.com/colorswall/colorpick" data-show-count="true" aria-label="Star colorswall/colorpick on GitHub">Star</a>
                             </div>
+                            <PalettePanel />
                             <Share />
                         </div>
                     </Toolbar>
