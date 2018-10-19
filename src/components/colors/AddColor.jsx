@@ -10,8 +10,8 @@ const styles = theme => ({
         margin: theme.spacing.unit * 2,
     },
     absolute: {
-        position: 'absolute',
-        bottom: theme.spacing.unit * 8,
+        position: 'fixed',
+        bottom: theme.spacing.unit * 12,
         right: theme.spacing.unit * 6,
         zIndex: 100
     },
