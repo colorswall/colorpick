@@ -21,7 +21,6 @@ class MyPicker extends PureComponent {
     }
 
     render() {
-
         const { hex, hsl, randomColor, classes, onChange } = this.props;
         const styles = {
             hue: {

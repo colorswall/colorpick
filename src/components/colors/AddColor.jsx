@@ -6,9 +6,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 import appStyles from '../../styles';
 
 const styles = theme => ({
-    fab: {
-        margin: theme.spacing.unit * 2,
-    },
     absolute: {
         position: 'fixed',
         bottom: theme.spacing.unit * 12,
@@ -21,7 +18,7 @@ const styles = theme => ({
 const AddColor = ({ classes, onClickPopup }) => {
     return (
         <Tooltip title="Add color" classes={{ tooltip: classes.lightTooltip }} placement="top">
-            <Button variant="fab" color="primary" aria-label="Add" className={classes.absolute} onClick={e => onClickPopup(e.currentTarget)}>
+            <Button color="primary" aria-label="Add" className={classes.absolute} onClick={e => onClickPopup(e.currentTarget)}>
                 <AddIcon />
             </Button>
         </Tooltip>

@@ -27,6 +27,9 @@ const styles = theme => ({
         boxShadow: theme.shadows[5],
         padding: theme.spacing.unit * 4,
     },
+    button: {
+        marginLeft: '16px'
+    }
 });
 
 class SimpleModal extends PureComponent {
@@ -46,15 +49,14 @@ class SimpleModal extends PureComponent {
         const { classes } = this.props;
         return (
             <Fragment>
-                <Button onClick={this.handleOpen} className="d-inline-block">
+                <Button variant="contained" color="primary" className={classes.button} onClick={this.handleOpen}>
                     <ShareIcon />&nbsp;Share
                 </Button>
                 <Modal
                     aria-labelledby="simple-modal-title"
                     aria-describedby="simple-modal-description"
                     open={this.state.open}
-                    onClose={this.handleClose}
-                >
+                    onClose={this.handleClose}>
                     <div style={getModalStyle()} className={classes.paper}>
                         <Typography variant="title">
                             Share
